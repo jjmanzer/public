@@ -11,8 +11,6 @@ do
     touch $dir/__init__.py 
 done
 
-exit
-
 for yang_file in $YANG_FILES
 do
     python_file=$(echo $yang_file | sed 's/models/classes/; s/yang/py/; s/-/_/g;')
